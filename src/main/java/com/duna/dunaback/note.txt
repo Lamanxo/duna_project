@@ -1,0 +1,50 @@
+
+all adverts /adverts/mini/get-all
+    author
+    views
+    likes
+    photos
+  all data by one DTO
+
+
+User  /user/{userId}
+    comments (about user) /comments/mini/{id}
+    adverts mini (of user) /adverts/mini/addressee/{id}
+    avatar (of user) /user/avatar/{userId}
+
+Technic_type
+    /technic-type-lib/{name}
+
+AdvertTechnicDtoIn
+должно подаваться при регистрации и возвращаться чтобы добавить фото
+
+
+todo
+поле избаннед должно передаваться ? адвертстатус
+
+tests
+    users
+        add
+        get
+
+    adv technic
+        add 2x
+        upd second
+        get all by owner
+        delete 2nd
+    adv dump
+        same
+    adv metal
+        same
+    likes
+        add
+        delete
+    comment
+        add
+        get all by user
+
+
+
+
+
+
